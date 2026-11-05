@@ -25,3 +25,14 @@
 .desktop-tools button{font-size:.875rem}.boot-skip{font-size:.875rem}
 @media(max-width:620px){html{scroll-padding-top:155px}}
 @media(max-width:360px){html{scroll-padding-top:190px}.titlebar{font-size:.875rem}}
+
+/* Mayo domain project card */
+.project-mayo{grid-column:1/-1;border-left:0;padding-left:0;border-top:3px solid #0a7a3a;padding-top:21px;position:relative}
+.project-mayo:before{content:"";position:absolute;top:-3px;left:50%;right:0;height:3px;background:#c8102e}
+.mayo-domain{display:flex;flex-wrap:wrap;margin-top:18px;font-size:1.05rem;line-height:1.5;word-break:break-all;letter-spacing:.02em;border:2px solid var(--border)}
+.mayo-domain span{padding:6px 10px;color:#fff}
+.mayo-g{background:#0a7a3a;flex:1 1 auto}
+.mayo-r{background:#c8102e;flex:1 1 auto}
+.mayo-tld{background:var(--ink);color:#fff}
+.project-mayo:hover .mayo-domain{filter:brightness(1.08)}
+@media(max-width:620px){.project-mayo{padding-top:16px}.mayo-domain{font-size:.9rem}}
